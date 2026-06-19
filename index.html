@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Free Tools by Bashir</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:Arial;text-align:center;padding:20px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;min-height:100vh;margin:0}
+.box{background:white;color:#333;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.3);max-width:400px;margin:50px auto}
+input,button{padding:12px;font-size:16px;margin:8px;width:85%;border-radius:8px;border:2px solid #667eea}
+button{background:#667eea;color:white;border:none;cursor:pointer;font-weight:bold}
+button:hover{background:#764ba2}
+h1{margin-bottom:5px}
+p{color:#666}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>🛠️ Free Tools</h1>
+<p>By Bashir6464</p>
+<h2>📅 عمر معلوم کرو</h2>
+<input type="number" id="year" placeholder="پیدائش کا سال لکھو" min="1900" max="2026">
+<br>
+<button onclick="calc()">حساب لگاؤ</button>
+<p id="result" style="font-size:24px;color:#667eea;font-weight:bold;margin-top:20px"></p>
+</div>
+<script>
+function calc(){
+let y = document.getElementById('year').value;
+if(y == "") {alert("یار سال تو لکھو!"); return;}
+let age = 2026 - parseInt(y);
+document.getElementById('result').innerHTML = "آپ کی عمر: " + age + " سال";
+}
+</script>
+</body>
+</html>
